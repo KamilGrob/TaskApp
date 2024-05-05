@@ -1,0 +1,50 @@
+﻿<Window x:Class="TestUI.TripAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestUI"
+        mc:Ignorable="d"
+                Title="TripAdd" Height="600" Width="200">
+    <Grid>
+        <StackPanel>
+
+            <ComboBox x:Name="CarComboBox" SelectedValuePath="Id" Margin="10">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Brand}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Model}"/>
+                            <TextBlock Text="{Binding RegistrationNumber}"/>
+                            <TextBlock Text="{Binding Type}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <ComboBox x:Name="DriverComboBox" SelectedValuePath="Id" Margin="10">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding FirstName}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding LastName}"/>
+                            <ItemsControl ItemsSource="{Binding LicenseCategories}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" />
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <DatePicker x:Name="StartTimeDatePicker" Margin="10"/>
+            <DatePicker x:Name="EndTimeDatePicker" Margin="10"/>
+            <extToolkit:DoubleUpDown x:Name="DistanceTextBox" Margin="10"/>
+            <extToolkit:DoubleUpDown x:Name="AverageFuelConsumptionTextBox" Margin="10"/>
+            
+            <Button Content="Add" Click="AddTrip_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

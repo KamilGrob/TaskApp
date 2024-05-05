@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CarAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CarUpdateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DriverAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DriverUpdateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DriverWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TripAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TripUpdateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TripWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CarAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CarUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DriverAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DriverUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DriverWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CarWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TripAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TripUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TripWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

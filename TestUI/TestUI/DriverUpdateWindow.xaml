@@ -1,0 +1,20 @@
+﻿<Window x:Class="TestUI.DriverUpdate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestUI"
+        mc:Ignorable="d"
+            Title="DriverUpdate" Height="200" Width="200">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="FirstNameTextBox" Margin="10" />
+            <TextBox x:Name="LastNameTextBox" Margin="10"/>
+            <CheckBox Content="Category A" Checked="LicenseCategory_Checked" Unchecked="LicenseCategory_Unchecked" Tag="A" />
+            <CheckBox Content="Category B" Checked="LicenseCategory_Checked" Unchecked="LicenseCategory_Unchecked" Tag="B" />
+            <CheckBox Content="Category C" Checked="LicenseCategory_Checked" Unchecked="LicenseCategory_Unchecked" Tag="C" />
+            <CheckBox Content="Category D" Checked="LicenseCategory_Checked" Unchecked="LicenseCategory_Unchecked" Tag="D" />
+            <Button Content="Add" Click="AddDriver_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
